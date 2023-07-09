@@ -30,5 +30,17 @@ show databases
 Вложен файл "ключи и таблици"
 ---
 ## Задание 3
-Надеюсь видно, т.к sakila была созданна до выдачи всех прав, я вновь выдал на пользователяя все прова именно по этой БД и отобрал нужную их часть в целом механизм ясен, через запятую перечисляем то что забираем вот и все
+Надеюсь видно, т.к sakila была созданна до выдачи всех прав, я вновь выдал на пользователяя все прова именно по 
+этой БД и отобрал нужную их часть в целом механизм ясен, через запятую перечисляем то что забираем вот и все
+```mysql
+GRANT ALL PRIVILEGES ON mysql.sakila TO 'sys_temp'@'localhost';
+
+FLUSH privileges;
+
+SHOW GRANTS FOR 'sys_temp'@'localhost'
+
+REVOKE INSERT, delete, UPDATE ON mysql.sakila FROM 'sys_temp'@'localhost';
+
+SHOW GRANTS FOR 'sys_temp'@'localhost'
+```
 ---
