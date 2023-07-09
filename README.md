@@ -27,5 +27,5 @@ show databases
 ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY '1111'; - это вообще вроде для смены пароля команда, не вышло ни разу через нее поменять пользователя, в итоге f4 и изменение данных в dbeawer 
 ---
 ## Задание 2
-![ключи, таблици](ключи таблици.ods)
+![ключи, таблици](https://github.com/VladiSlave2042/mysql/blob/main/%D0%BA%D0%BB%D1%8E%D1%87%D0%B8%20%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B8.ods)
 ---
